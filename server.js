@@ -44,11 +44,6 @@ app.use(helmet());
 
 // socket.io
 
-const io = socket(8900 , {
-    cors : {
-        origin : "http://localhost:2000",
-    }
-})
 
 io.on("connection",(socket) => {
     console.log("a user connected");
